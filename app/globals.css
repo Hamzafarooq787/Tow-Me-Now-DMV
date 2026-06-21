@@ -1,17 +1,59 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-primary: #4cd7f6;
+  --color-surface: #0c141f;
+  --color-surface-container: #19202b;
+  --color-surface-container-low: #151c27;
+  --color-surface-container-lowest: #070e19;
+  --color-outline-variant: #3d494c;
+  --color-amber-brand: #f59e0b;
+  --color-dark-navy: #0b0f1a;
+  --color-on-background: #dce2f3;
+  --color-on-primary-container: #00424f;
+  --color-on-surface: #b0bfcf;
+  --color-on-surface-variant: #7b8ea8;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #0c141f;
+  color: #dce2f3;
+  font-family: 'Inter', sans-serif;
+}
+
+.bebas {
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.inter {
+  font-family: 'Inter', sans-serif;
+}
+
+.amber-glow:hover {
+  box-shadow: 0 0 20px rgba(245, 158, 11, 0.2);
+  border-color: #f59e0b;
+}
+
+.diagonal-split {
+  clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+}
+
+.glass-panel {
+  background: rgba(19, 25, 41, 0.8);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.neon-border {
+  border: 1px solid #1f1f1f;
+  transition: all 0.3s ease;
+}
+
+.neon-border:hover {
+  border-color: #4cd7f6;
+  box-shadow: 0 0 10px rgba(76, 215, 246, 0.3);
 }
