@@ -2,40 +2,42 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useState } from "react";
 
 const links = [
   { label: "HOME", href: "/" },
-  { label: "WHY CHOOSE US?", href: "/#why" },
   { label: "SERVICES", href: "/services" },
   { label: "ABOUT", href: "/about" },
-  { label: "GALLERY", href: "/#gallery" },
   { label: "CONTACT", href: "/contact" },
 ];
 
 export default function Nav() {
   const pathname = usePathname();
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <nav className="sticky top-0 z-50 bg-surface/90 backdrop-blur-md border-b border-outline-variant">
-      <div className="max-w-[1280px] mx-auto px-8 py-4 flex justify-between items-center">
-        <Link href="/" className="flex items-center gap-2">
+      <div className="max-w-[1280px] mx-auto px-6 md:px-8 py-4 flex justify-between items-center">
+        <Link
+          href="/"
+          className="flex items-center gap-2"
+          onClick={() => setMenuOpen(false)}
+        >
           <span
             className="material-symbols-outlined text-amber-brand text-3xl"
             style={{ fontVariationSettings: "'FILL' 1" }}
           >
             rowing
           </span>
-          <span className="bebas text-2xl md:text-3xl font-bold tracking-tight text-on-background">
+          <span className="bebas text-xl sm:text-2xl md:text-3xl font-bold tracking-tight text-on-background">
             TOW ME NOW <span className="text-primary">DMV</span>
           </span>
         </Link>
 
+        {/* Desktop links */}
         <div className="hidden lg:flex items-center gap-8">
           {links.map(({ label, href }) => {
-            const isActive =
-              href === "/"
-                ? pathname === "/"
-                : pathname.startsWith(href.replace("/#", "/"));
+            const isActive = href === "/" ? pathname === "/" : pathname === href;
             return (
               <Link
                 key={href}
@@ -52,13 +54,54 @@ export default function Nav() {
           })}
         </div>
 
-        <a
-          className="bg-amber-brand hover:bg-amber-600 text-black font-bold py-2 px-6 rounded transition-transform active:scale-95 uppercase text-sm tracking-widest bebas"
-          href="tel:2028120075"
-        >
-          Call Now
-        </a>
+        <div className="flex items-center gap-3">
+          <a
+            className="hidden sm:block bg-amber-brand hover:bg-amber-600 text-black font-bold py-2 px-5 rounded transition-transform active:scale-95 uppercase text-sm tracking-widest bebas"
+            href="tel:2028120075"
+          >
+            Call Now
+          </a>
+          {/* Mobile hamburger */}
+          <button
+            className="lg:hidden text-on-surface p-1"
+            onClick={() => setMenuOpen(!menuOpen)}
+            aria-label="Toggle menu"
+          >
+            <span className="material-symbols-outlined text-3xl">
+              {menuOpen ? "close" : "menu"}
+            </span>
+          </button>
+        </div>
       </div>
+
+      {/* Mobile menu */}
+      {menuOpen && (
+        <div className="lg:hidden bg-surface border-t border-outline-variant">
+          <div className="max-w-[1280px] mx-auto px-6 py-6 flex flex-col gap-6">
+            {links.map(({ label, href }) => {
+              const isActive = href === "/" ? pathname === "/" : pathname === href;
+              return (
+                <Link
+                  key={href}
+                  href={href}
+                  onClick={() => setMenuOpen(false)}
+                  className={`font-label-bold text-[16px] transition-colors border-b border-outline-variant pb-4 ${
+                    isActive ? "text-primary" : "text-on-surface hover:text-primary"
+                  }`}
+                >
+                  {label}
+                </Link>
+              );
+            })}
+            <a
+              className="bg-amber-brand text-black font-bold py-3 px-6 rounded text-center uppercase tracking-widest bebas text-lg"
+              href="tel:2028120075"
+            >
+              Call Now — 202-812-0075
+            </a>
+          </div>
+        </div>
+      )}
     </nav>
   );
 }

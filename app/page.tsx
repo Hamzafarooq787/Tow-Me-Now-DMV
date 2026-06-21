@@ -4,8 +4,8 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <header className="relative min-h-[870px] flex items-center overflow-hidden bg-dark-navy">
-        <div className="max-w-[1280px] mx-auto px-8 grid lg:grid-cols-2 gap-0 w-full relative z-10">
+      <header className="relative min-h-[600px] md:min-h-[870px] flex items-center overflow-hidden bg-dark-navy">
+        <div className="max-w-[1280px] mx-auto px-6 md:px-8 grid lg:grid-cols-2 gap-0 w-full relative z-10">
           <div className="py-12 lg:pr-12">
             <span className="inline-block py-1 px-3 bg-primary/10 text-primary border border-primary/20 text-xs font-bold uppercase tracking-widest mb-6">
               Available 24/7 Across DMV Area
@@ -57,8 +57,8 @@ export default function Home() {
       </header>
 
       {/* Stats */}
-      <section className="bg-surface-container py-16 border-y border-outline-variant">
-        <div className="max-w-[1280px] mx-auto px-8 grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+      <section className="bg-surface-container py-12 md:py-16 border-y border-outline-variant">
+        <div className="max-w-[1280px] mx-auto px-6 md:px-8 grid grid-cols-3 gap-6 md:gap-12 text-center">
           <div className="group">
             <div className="bebas text-6xl text-amber-brand mb-2 group-hover:scale-110 transition-transform">
               25+
@@ -87,8 +87,8 @@ export default function Home() {
       </section>
 
       {/* Services */}
-      <section className="py-24 bg-surface" id="services">
-        <div className="max-w-[1280px] mx-auto px-8">
+      <section className="py-16 md:py-24 bg-surface" id="services">
+        <div className="max-w-[1280px] mx-auto px-6 md:px-8">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
             <div>
               <h2 className="bebas text-5xl md:text-6xl text-on-background mb-4">
@@ -153,8 +153,8 @@ export default function Home() {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-24 bg-surface-container-low" id="why">
-        <div className="max-w-[1280px] mx-auto px-8 grid lg:grid-cols-2 gap-16 items-center">
+      <section className="py-16 md:py-24 bg-surface-container-low" id="why">
+        <div className="max-w-[1280px] mx-auto px-6 md:px-8 grid lg:grid-cols-2 gap-12 md:gap-16 items-center">
           <div className="relative">
             <div
               className="aspect-square bg-cover bg-center border border-outline-variant"
@@ -230,9 +230,9 @@ export default function Home() {
       </section>
 
       {/* Testimonials */}
-      <section className="py-24 bg-surface">
-        <div className="max-w-[1280px] mx-auto px-8">
-          <div className="text-center mb-16">
+      <section className="py-16 md:py-24 bg-surface">
+        <div className="max-w-[1280px] mx-auto px-6 md:px-8">
+          <div className="text-center mb-12 md:mb-16">
             <h2 className="bebas text-5xl md:text-6xl text-on-background mb-4">
               Trusted by the <span className="text-primary">Community</span>
             </h2>
@@ -302,8 +302,8 @@ export default function Home() {
       </section>
 
       {/* Contact Form */}
-      <section className="py-24 bg-surface-container-lowest" id="contact">
-        <div className="max-w-[1280px] mx-auto px-8 grid lg:grid-cols-12 gap-16">
+      <section className="py-16 md:py-24 bg-surface-container-lowest" id="contact">
+        <div className="max-w-[1280px] mx-auto px-6 md:px-8 grid lg:grid-cols-12 gap-12 md:gap-16">
           <div className="lg:col-span-5">
             <h2 className="bebas text-6xl text-on-background mb-6">
               Get Assistance <span className="text-amber-brand">Now</span>

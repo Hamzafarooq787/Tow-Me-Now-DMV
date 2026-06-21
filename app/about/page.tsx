@@ -11,15 +11,15 @@ export default function AboutPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative min-h-[614px] flex items-center diagonal-clip bg-surface-main overflow-hidden">
+      <section className="relative min-h-[500px] md:min-h-[614px] flex items-center diagonal-clip bg-surface-main overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-[#091518] via-[#091518]/80 to-transparent" />
-        <div className="relative z-10 w-full max-w-[1280px] mx-auto px-8 py-24">
+        <div className="relative z-10 w-full max-w-[1280px] mx-auto px-6 md:px-8 py-16 md:py-24">
           <nav className="flex items-center gap-2 mb-6 text-on-surface-muted font-label-bold text-label-bold tracking-[0.1em]">
             <Link className="hover:text-primary transition-colors" href="/">HOME</Link>
             <span className="material-symbols-outlined text-[14px]">chevron_right</span>
             <span className="text-secondary">ABOUT US</span>
           </nav>
-          <h1 className="font-headline-xl text-headline-xl text-on-surface mb-4 leading-tight">
+          <h1 className="font-headline-xl text-[52px] sm:text-[72px] md:text-headline-xl text-on-surface mb-4 leading-tight">
             BUILT ON <span className="text-secondary">TRUST</span>,<br />
             DRIVEN BY <span className="text-primary">SERVICE</span>
           </h1>
@@ -30,7 +30,7 @@ export default function AboutPage() {
       </section>
 
       {/* Our Story */}
-      <section className="py-24 max-w-[1280px] mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+      <section className="py-16 md:py-24 max-w-[1280px] mx-auto px-6 md:px-8 grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-20 items-center">
         <div className="relative group">
           <div className="absolute -inset-4 border border-secondary/20 rounded-lg -z-10 transition-transform group-hover:translate-x-2 group-hover:translate-y-2" />
           <div className="relative aspect-square bg-surface-card border-l-4 border-secondary overflow-hidden shadow-2xl">
@@ -70,8 +70,8 @@ export default function AboutPage() {
       </section>
 
       {/* Core Values */}
-      <section className="bg-surface-container-lowest py-24">
-        <div className="max-w-[1280px] mx-auto px-8">
+      <section className="bg-surface-container-lowest py-16 md:py-24">
+        <div className="max-w-[1280px] mx-auto px-6 md:px-8">
           <div className="text-center mb-16">
             <span className="text-primary font-label-bold text-label-bold tracking-[0.3em] uppercase mb-4 block">Our DNA</span>
             <h2 className="font-headline-lg text-headline-lg text-on-surface">
@@ -99,8 +99,8 @@ export default function AboutPage() {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-24 max-w-[1280px] mx-auto px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
+      <section className="py-16 md:py-24 max-w-[1280px] mx-auto px-6 md:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-20">
           <div>
             <h2 className="font-headline-lg text-headline-lg text-on-surface mb-10">
               THE <span className="text-primary">TOW ME NOW</span> EDGE
@@ -171,8 +171,8 @@ export default function AboutPage() {
       </section>
 
       {/* Team Strip */}
-      <section className="py-24 bg-surface-main">
-        <div className="max-w-[1280px] mx-auto px-8">
+      <section className="py-16 md:py-24 bg-surface-main">
+        <div className="max-w-[1280px] mx-auto px-6 md:px-8">
           <div className="flex justify-between items-end mb-16">
             <div>
               <span className="text-secondary font-label-bold text-label-bold tracking-[0.3em] uppercase mb-4 block">The Crew</span>
@@ -224,7 +224,7 @@ export default function AboutPage() {
       </section>
 
       {/* CTA */}
-      <section className="max-w-[1280px] mx-auto px-8 pb-24">
+      <section className="max-w-[1280px] mx-auto px-6 md:px-8 pb-16 md:pb-24">
         <div className="bg-gradient-to-r from-secondary to-secondary-container p-12 relative overflow-hidden flex flex-col md:flex-row justify-between items-center gap-8 shadow-2xl amber-glow">
           <div
             className="absolute inset-0 opacity-20 pointer-events-none"
