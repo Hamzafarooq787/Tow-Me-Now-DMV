@@ -12,15 +12,15 @@ export default function ServicesPage() {
   return (
     <>
       {/* Hero */}
-      <header className="relative w-full overflow-hidden bg-surface-main diagonal-clip pt-20 pb-32 md:pb-48">
+      <header className="relative w-full overflow-hidden bg-surface-main diagonal-clip pt-16 pb-16 md:pt-20 md:pb-48">
         <div className="absolute inset-0 bg-gradient-to-br from-secondary/20 via-transparent to-transparent pointer-events-none" />
-        <div className="relative z-10 max-w-[1280px] mx-auto px-8">
+        <div className="relative z-10 max-w-[1280px] mx-auto px-6 md:px-8">
           <nav className="flex mb-8 items-center gap-2 font-label-bold text-[14px] text-secondary/70 font-bold tracking-[0.1em]">
             <Link className="hover:text-secondary" href="/">Home</Link>
             <span className="material-symbols-outlined text-[14px]">chevron_right</span>
             <span className="text-secondary">Services</span>
           </nav>
-          <h1 className="font-headline-xl text-headline-xl text-on-surface leading-none mb-6 max-w-3xl">
+          <h1 className="font-headline-xl text-[52px] sm:text-[72px] md:text-headline-xl text-on-surface leading-none mb-6 max-w-3xl">
             Professional <span className="text-secondary">Towing</span> &amp; Roadside Services
           </h1>
           <p className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-10">
@@ -42,7 +42,7 @@ export default function ServicesPage() {
       </header>
 
       {/* Service Cards */}
-      <main className="max-w-[1280px] mx-auto px-8 py-24 space-y-24">
+      <main className="max-w-[1280px] mx-auto px-6 md:px-8 py-16 md:py-24 space-y-16 md:space-y-24">
 
         {/* Card 1: Accident Management — image right */}
         <section className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center bg-surface-card border-l-4 border-secondary overflow-hidden">
@@ -173,7 +173,7 @@ export default function ServicesPage() {
             }}
           />
         </div>
-        <div className="relative z-10 max-w-[1280px] mx-auto px-8 text-center">
+        <div className="relative z-10 max-w-[1280px] mx-auto px-6 md:px-8 text-center">
           <h2 className="font-headline-lg text-headline-md text-on-surface mb-8">
             Serving the Entire <span className="text-secondary">DMV Region</span>
           </h2>
@@ -195,7 +195,7 @@ export default function ServicesPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="max-w-4xl mx-auto px-8 py-24">
+      <section className="max-w-4xl mx-auto px-6 md:px-8 py-16 md:py-24">
         <div className="text-center mb-16">
           <h2 className="font-headline-lg text-headline-md text-on-surface mb-4">
             Service <span className="text-secondary">Intelligence</span>

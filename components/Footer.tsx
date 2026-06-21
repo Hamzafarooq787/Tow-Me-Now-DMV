@@ -3,9 +3,10 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="bg-surface-container-lowest py-16 border-t border-outline-variant">
-      <div className="max-w-[1280px] mx-auto px-8">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
-          <div className="col-span-1 md:col-span-1">
+      <div className="max-w-[1280px] mx-auto px-6 md:px-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 md:gap-12 mb-16">
+          {/* Brand */}
+          <div className="sm:col-span-2 md:col-span-1">
             <div className="flex items-center gap-2 mb-6">
               <span
                 className="material-symbols-outlined text-amber-brand text-3xl"
@@ -37,48 +38,92 @@ export default function Footer() {
             </div>
           </div>
 
+          {/* Quick Links */}
           <div>
             <h5 className="bebas text-xl text-on-background mb-6">Quick Links</h5>
             <ul className="space-y-4 inter text-sm text-on-surface-variant">
-              <li><Link className="hover:text-primary transition-colors" href="#">Privacy Policy</Link></li>
-              <li><Link className="hover:text-primary transition-colors" href="#">Terms of Service</Link></li>
-              <li><Link className="hover:text-primary transition-colors" href="#">Sitemap</Link></li>
-              <li><Link className="hover:text-primary transition-colors" href="#">Career Opportunities</Link></li>
+              <li>
+                <Link className="hover:text-primary transition-colors" href="/">
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link className="hover:text-primary transition-colors" href="/services">
+                  Services
+                </Link>
+              </li>
+              <li>
+                <Link className="hover:text-primary transition-colors" href="/about">
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link className="hover:text-primary transition-colors" href="/contact">
+                  Contact
+                </Link>
+              </li>
             </ul>
           </div>
 
+          {/* Services */}
           <div>
             <h5 className="bebas text-xl text-on-background mb-6">Services</h5>
             <ul className="space-y-4 inter text-sm text-on-surface-variant">
-              <li><Link className="hover:text-primary transition-colors" href="/services">24/7 Emergency Towing</Link></li>
-              <li><Link className="hover:text-primary transition-colors" href="/services">Accident Management</Link></li>
-              <li><Link className="hover:text-primary transition-colors" href="/services">Roadside Support</Link></li>
-              <li><Link className="hover:text-primary transition-colors" href="/services">Specialized Transport</Link></li>
+              <li>
+                <Link className="hover:text-primary transition-colors" href="/services">
+                  24/7 Emergency Towing
+                </Link>
+              </li>
+              <li>
+                <Link className="hover:text-primary transition-colors" href="/services">
+                  Accident Management
+                </Link>
+              </li>
+              <li>
+                <Link className="hover:text-primary transition-colors" href="/services">
+                  Roadside Support
+                </Link>
+              </li>
+              <li>
+                <Link className="hover:text-primary transition-colors" href="/services">
+                  Specialized Transport
+                </Link>
+              </li>
             </ul>
           </div>
 
+          {/* Contact Info */}
           <div>
             <h5 className="bebas text-xl text-on-background mb-6">Contact Info</h5>
             <ul className="space-y-4 inter text-sm text-on-surface-variant">
               <li className="flex items-start gap-3">
-                <span className="material-symbols-outlined text-primary text-lg">location_on</span>
-                <span>Serving Washington D.C., <br />Maryland, and Virginia</span>
+                <span className="material-symbols-outlined text-primary text-lg">
+                  location_on
+                </span>
+                <span>
+                  Serving Washington D.C., <br />
+                  Maryland, and Virginia
+                </span>
               </li>
               <li className="flex items-center gap-3">
-                <span className="material-symbols-outlined text-primary text-lg">call</span>
-                <span>202-812-0075</span>
+                <span className="material-symbols-outlined text-primary text-lg">
+                  call
+                </span>
+                <a href="tel:2028120075" className="hover:text-primary transition-colors">202-812-0075</a>
               </li>
               <li className="flex items-center gap-3">
-                <span className="material-symbols-outlined text-primary text-lg">mail</span>
-                <span>Towmenowdmv@gmail.com</span>
+                <span className="material-symbols-outlined text-primary text-lg">
+                  mail
+                </span>
+                <a href="mailto:Towmenowdmv@gmail.com" className="hover:text-primary transition-colors break-all">Towmenowdmv@gmail.com</a>
               </li>
             </ul>
           </div>
         </div>
 
-        <div className="pt-8 border-t border-outline-variant flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] sm:text-xs font-bold uppercase tracking-widest text-on-surface-variant">
+        <div className="pt-8 border-t border-outline-variant flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] sm:text-xs font-bold uppercase tracking-widest text-on-surface-variant text-center md:text-left">
           <p>© 2025 Tow Me Now DMV. All rights reserved.</p>
-          <div className="flex gap-8">
+          <div className="flex flex-wrap justify-center gap-4 md:gap-8">
             <span>Precision Towing</span>
             <span>Professional Recovery</span>
             <span>24/7 Reliability</span>

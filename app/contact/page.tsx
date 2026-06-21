@@ -11,7 +11,7 @@ export default function ContactPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative bg-surface-container-lowest py-24 hero-diagonal min-h-[614px] flex items-center overflow-hidden">
+      <section className="relative bg-surface-container-lowest py-16 md:py-24 hero-diagonal min-h-[500px] md:min-h-[614px] flex items-center overflow-hidden">
         <div className="absolute inset-0 opacity-40">
           <div
             className="w-full h-full bg-cover bg-center"
@@ -21,14 +21,14 @@ export default function ContactPage() {
             }}
           />
         </div>
-        <div className="relative z-10 max-w-[1280px] mx-auto px-8 w-full">
+        <div className="relative z-10 max-w-[1280px] mx-auto px-6 md:px-8 w-full">
           <div className="flex flex-col space-y-4">
             <nav className="flex items-center space-x-2 text-primary font-label-bold text-label-bold tracking-widest uppercase mb-4">
               <Link className="hover:text-secondary transition-colors" href="/">Home</Link>
               <span className="material-symbols-outlined text-[14px]">chevron_right</span>
               <span className="text-on-surface">Contact Us</span>
             </nav>
-            <h1 className="font-headline-xl text-headline-xl text-on-surface max-w-4xl leading-none">
+            <h1 className="font-headline-xl text-[44px] sm:text-[64px] md:text-headline-xl text-on-surface max-w-4xl leading-none">
               WE&apos;RE READY TO HELP — <span className="text-secondary">RIGHT NOW</span>
             </h1>
             <p className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl border-l-4 border-secondary pl-6 py-2">
@@ -39,7 +39,7 @@ export default function ContactPage() {
       </section>
 
       {/* Info Cards */}
-      <section className="max-w-[1280px] mx-auto px-8 -mt-20 relative z-20">
+      <section className="max-w-[1280px] mx-auto px-6 md:px-8 mt-8 md:-mt-20 relative z-20">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           <div className="bg-surface-card border-l-4 border-secondary p-10 flex flex-col space-y-4 neon-glow-secondary transition-all">
             <div className="bg-secondary/10 w-16 h-16 flex items-center justify-center">
@@ -79,7 +79,7 @@ export default function ContactPage() {
       </section>
 
       {/* Form + Sidebar */}
-      <section className="max-w-[1280px] mx-auto px-8 py-24">
+      <section className="max-w-[1280px] mx-auto px-6 md:px-8 py-16 md:py-24">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
           {/* Form */}
           <div className="lg:col-span-8">
@@ -248,8 +248,8 @@ export default function ContactPage() {
       </section>
 
       {/* Map Placeholder */}
-      <section className="max-w-[1280px] mx-auto px-8 mb-24">
-        <div className="relative group cursor-pointer overflow-hidden border border-outline-variant/30 h-[500px]">
+      <section className="max-w-[1280px] mx-auto px-6 md:px-8 mb-16 md:mb-24">
+        <div className="relative group cursor-pointer overflow-hidden border border-outline-variant/30 h-[280px] sm:h-[400px] md:h-[500px]">
           <div
             className="w-full h-full bg-cover bg-center grayscale contrast-125 opacity-60 transition-transform duration-700 group-hover:scale-105"
             style={{
@@ -276,8 +276,8 @@ export default function ContactPage() {
       </section>
 
       {/* Reassurance Strip */}
-      <section className="bg-surface-container py-24 border-t border-secondary/20">
-        <div className="max-w-[1280px] mx-auto px-8 text-center">
+      <section className="bg-surface-container py-16 md:py-24 border-t border-secondary/20">
+        <div className="max-w-[1280px] mx-auto px-6 md:px-8 text-center">
           <h2 className="font-headline-lg text-headline-lg text-on-surface mb-8">STILL HAVE QUESTIONS?</h2>
           <div className="flex flex-col md:flex-row justify-center items-center gap-6">
             <Link
