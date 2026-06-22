@@ -60,26 +60,26 @@ export default function Home() {
       <section className="bg-surface-container py-12 md:py-16 border-y border-outline-variant">
         <div className="max-w-[1280px] mx-auto px-6 md:px-8 grid grid-cols-3 gap-6 md:gap-12 text-center">
           <div className="group">
-            <div className="bebas text-6xl text-amber-brand mb-2 group-hover:scale-110 transition-transform">
+            <div className="bebas text-4xl sm:text-6xl text-amber-brand mb-2 group-hover:scale-110 transition-transform">
               25+
             </div>
-            <div className="inter text-sm font-bold uppercase tracking-[0.2em] text-on-surface-variant">
+            <div className="inter text-xs sm:text-sm font-bold uppercase tracking-[0.2em] text-on-surface-variant">
               Years Experience
             </div>
           </div>
           <div className="group">
-            <div className="bebas text-6xl text-amber-brand mb-2 group-hover:scale-110 transition-transform">
+            <div className="bebas text-4xl sm:text-6xl text-amber-brand mb-2 group-hover:scale-110 transition-transform">
               24/7
             </div>
-            <div className="inter text-sm font-bold uppercase tracking-[0.2em] text-on-surface-variant">
+            <div className="inter text-xs sm:text-sm font-bold uppercase tracking-[0.2em] text-on-surface-variant">
               Availability
             </div>
           </div>
           <div className="group">
-            <div className="bebas text-6xl text-amber-brand mb-2 group-hover:scale-110 transition-transform">
+            <div className="bebas text-4xl sm:text-6xl text-amber-brand mb-2 group-hover:scale-110 transition-transform">
               FAST
             </div>
-            <div className="inter text-sm font-bold uppercase tracking-[0.2em] text-on-surface-variant">
+            <div className="inter text-xs sm:text-sm font-bold uppercase tracking-[0.2em] text-on-surface-variant">
               Response Time
             </div>
           </div>
@@ -114,7 +114,7 @@ export default function Home() {
               <div className="h-52 overflow-hidden">
                 <img src="/images/Accident%20DMV-airanko.webp" alt="Accident Management" className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" />
               </div>
-              <div className="p-10">
+              <div className="p-8 md:p-10">
                 <h3 className="bebas text-3xl text-on-background mb-4">
                   Accident Management
                 </h3>
@@ -129,7 +129,7 @@ export default function Home() {
               <div className="h-52 overflow-hidden">
                 <img src="/images/Towing%20service%20DMV-airanko.webp" alt="Recovery Towing" className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" />
               </div>
-              <div className="p-10">
+              <div className="p-8 md:p-10">
                 <h3 className="bebas text-3xl text-on-background mb-4">
                   Recovery Towing
                 </h3>
@@ -144,7 +144,7 @@ export default function Home() {
               <div className="h-52 overflow-hidden">
                 <img src="/images/Roadside%20Assistance%20DMV-airanko.webp" alt="Roadside Assistance" className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" />
               </div>
-              <div className="p-10">
+              <div className="p-8 md:p-10">
                 <h3 className="bebas text-3xl text-on-background mb-4">
                   Roadside Assistance
                 </h3>
@@ -169,9 +169,6 @@ export default function Home() {
                   "url('/images/why%20choose%20us-airanko.webp')",
               }}
             />
-            <div className="absolute -bottom-8 -right-8 bg-amber-brand p-8 hidden md:block">
-              <div className="bebas text-4xl text-black">SINCE 1999</div>
-            </div>
           </div>
 
           <div>
@@ -353,13 +350,19 @@ export default function Home() {
           </div>
 
           <div className="lg:col-span-7">
-            <form className="glass-panel p-10 space-y-6">
+            <form
+              className="glass-panel p-6 md:p-10 space-y-6"
+              action="mailto:Towmenowdmv@gmail.com?subject=Service%20Request%20-%20Tow%20Me%20Now%20DMV"
+              method="POST"
+              encType="text/plain"
+            >
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <label className="inter text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-2 block">
                     Full Name
                   </label>
                   <input
+                    name="Full Name"
                     className="w-full bg-surface border border-outline-variant focus:border-amber-brand focus:ring-0 text-on-background p-4 transition-all outline-none"
                     placeholder="John Doe"
                     type="text"
@@ -370,6 +373,7 @@ export default function Home() {
                     Phone Number
                   </label>
                   <input
+                    name="Phone Number"
                     className="w-full bg-surface border border-outline-variant focus:border-amber-brand focus:ring-0 text-on-background p-4 transition-all outline-none"
                     placeholder="(202) 000-0000"
                     type="tel"
@@ -382,6 +386,7 @@ export default function Home() {
                     Email Address
                   </label>
                   <input
+                    name="Email Address"
                     className="w-full bg-surface border border-outline-variant focus:border-amber-brand focus:ring-0 text-on-background p-4 transition-all outline-none"
                     placeholder="john@example.com"
                     type="email"
@@ -392,6 +397,7 @@ export default function Home() {
                     Vehicle Make/Model
                   </label>
                   <input
+                    name="Vehicle"
                     className="w-full bg-surface border border-outline-variant focus:border-amber-brand focus:ring-0 text-on-background p-4 transition-all outline-none"
                     placeholder="e.g., Ford F-150"
                     type="text"
@@ -403,7 +409,7 @@ export default function Home() {
                   <label className="inter text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-2 block">
                     Service Needed
                   </label>
-                  <select className="w-full bg-surface border border-outline-variant focus:border-amber-brand focus:ring-0 text-on-background p-4 transition-all appearance-none outline-none">
+                  <select name="Service" className="w-full bg-surface border border-outline-variant focus:border-amber-brand focus:ring-0 text-on-background p-4 transition-all appearance-none outline-none">
                     <option>Select a Service</option>
                     <option>Emergency Towing</option>
                     <option>Accident Recovery</option>
@@ -416,6 +422,7 @@ export default function Home() {
                     Location
                   </label>
                   <input
+                    name="Location"
                     className="w-full bg-surface border border-outline-variant focus:border-amber-brand focus:ring-0 text-on-background p-4 transition-all outline-none"
                     placeholder="Current address or landmark"
                     type="text"
@@ -427,6 +434,7 @@ export default function Home() {
                   Message / Additional Details
                 </label>
                 <textarea
+                  name="Message"
                   className="w-full bg-surface border border-outline-variant focus:border-amber-brand focus:ring-0 text-on-background p-4 transition-all outline-none"
                   placeholder="How can we help?"
                   rows={4}

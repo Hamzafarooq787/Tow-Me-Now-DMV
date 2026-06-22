@@ -41,7 +41,7 @@ export default function ContactPage() {
       {/* Info Cards */}
       <section className="max-w-[1280px] mx-auto px-6 md:px-8 mt-8 md:-mt-20 relative z-20">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          <div className="bg-surface-card border-l-4 border-secondary p-10 flex flex-col space-y-4 neon-glow-secondary transition-all">
+          <div className="bg-surface-card border-l-4 border-secondary p-8 md:p-10 flex flex-col space-y-4 neon-glow-secondary transition-all">
             <div className="bg-secondary/10 w-16 h-16 flex items-center justify-center">
               <span className="material-symbols-outlined text-secondary text-[40px]">phone_in_talk</span>
             </div>
@@ -53,19 +53,19 @@ export default function ContactPage() {
               </a>
             </div>
           </div>
-          <div className="bg-surface-card border-l-4 border-primary p-10 flex flex-col space-y-4 neon-glow-primary transition-all">
+          <div className="bg-surface-card border-l-4 border-primary p-8 md:p-10 flex flex-col space-y-4 neon-glow-primary transition-all">
             <div className="bg-primary/10 w-16 h-16 flex items-center justify-center">
               <span className="material-symbols-outlined text-primary text-[40px]">mail</span>
             </div>
             <div>
               <h3 className="font-headline-md text-headline-md text-on-surface">Email Dispatch</h3>
               <p className="font-body-md text-body-md text-on-surface-variant">General Inquiries &amp; Billing</p>
-              <a className="font-headline-md text-headline-md text-primary mt-2 block" href="mailto:Towmenowdmv@gmail.com">
+              <a className="font-headline-md text-headline-md text-primary mt-2 block break-all" href="mailto:Towmenowdmv@gmail.com">
                 Towmenowdmv@gmail.com
               </a>
             </div>
           </div>
-          <div className="bg-surface-card border-l-4 border-secondary p-10 flex flex-col space-y-4 neon-glow-secondary transition-all">
+          <div className="bg-surface-card border-l-4 border-secondary p-8 md:p-10 flex flex-col space-y-4 neon-glow-secondary transition-all">
             <div className="bg-secondary/10 w-16 h-16 flex items-center justify-center">
               <span className="material-symbols-outlined text-secondary text-[40px]">distance</span>
             </div>
@@ -91,10 +91,16 @@ export default function ContactPage() {
                 Fill out the details below and a dispatch officer will contact you immediately.
               </p>
             </div>
-            <form className="grid grid-cols-1 md:grid-cols-2 gap-6 bg-surface-container p-10 glass-panel-cyan">
+            <form
+              className="grid grid-cols-1 md:grid-cols-2 gap-6 bg-surface-container p-6 md:p-10 glass-panel-cyan"
+              action="mailto:Towmenowdmv@gmail.com?subject=Service%20Request%20-%20Tow%20Me%20Now%20DMV"
+              method="POST"
+              encType="text/plain"
+            >
               <div className="flex flex-col space-y-2">
                 <label className="font-label-bold text-label-bold text-on-surface-variant uppercase tracking-widest">Full Name</label>
                 <input
+                  name="Full Name"
                   className="bg-surface-main border border-outline-variant p-4 focus:border-secondary focus:ring-0 text-on-surface transition-all outline-none"
                   placeholder="John Doe"
                   type="text"
@@ -103,6 +109,7 @@ export default function ContactPage() {
               <div className="flex flex-col space-y-2">
                 <label className="font-label-bold text-label-bold text-on-surface-variant uppercase tracking-widest">Phone Number</label>
                 <input
+                  name="Phone Number"
                   className="bg-surface-main border border-outline-variant p-4 focus:border-secondary focus:ring-0 text-on-surface transition-all outline-none"
                   placeholder="(555) 000-0000"
                   type="tel"
@@ -111,6 +118,7 @@ export default function ContactPage() {
               <div className="flex flex-col space-y-2">
                 <label className="font-label-bold text-label-bold text-on-surface-variant uppercase tracking-widest">Email Address</label>
                 <input
+                  name="Email Address"
                   className="bg-surface-main border border-outline-variant p-4 focus:border-secondary focus:ring-0 text-on-surface transition-all outline-none"
                   placeholder="john@example.com"
                   type="email"
@@ -119,6 +127,7 @@ export default function ContactPage() {
               <div className="flex flex-col space-y-2">
                 <label className="font-label-bold text-label-bold text-on-surface-variant uppercase tracking-widest">Vehicle Make/Model</label>
                 <input
+                  name="Vehicle"
                   className="bg-surface-main border border-outline-variant p-4 focus:border-secondary focus:ring-0 text-on-surface transition-all outline-none"
                   placeholder="e.g. 2021 Ford F-150"
                   type="text"
@@ -126,7 +135,7 @@ export default function ContactPage() {
               </div>
               <div className="flex flex-col space-y-2">
                 <label className="font-label-bold text-label-bold text-on-surface-variant uppercase tracking-widest">Service Required</label>
-                <select className="bg-surface-main border border-outline-variant p-4 focus:border-secondary focus:ring-0 text-on-surface transition-all outline-none appearance-none">
+                <select name="Service" className="bg-surface-main border border-outline-variant p-4 focus:border-secondary focus:ring-0 text-on-surface transition-all outline-none appearance-none">
                   <option>Emergency Towing</option>
                   <option>Roadside Assistance</option>
                   <option>Lockout Service</option>
@@ -136,7 +145,7 @@ export default function ContactPage() {
               </div>
               <div className="flex flex-col space-y-2">
                 <label className="font-label-bold text-label-bold text-on-surface-variant uppercase tracking-widest">Best Time To Contact</label>
-                <select className="bg-surface-main border border-outline-variant p-4 focus:border-secondary focus:ring-0 text-on-surface transition-all outline-none">
+                <select name="Best Time" className="bg-surface-main border border-outline-variant p-4 focus:border-secondary focus:ring-0 text-on-surface transition-all outline-none">
                   <option>Immediately (Asap)</option>
                   <option>In 30 Minutes</option>
                   <option>In 1-2 Hours</option>
@@ -147,6 +156,7 @@ export default function ContactPage() {
               <div className="flex flex-col space-y-2">
                 <label className="font-label-bold text-label-bold text-on-surface-variant uppercase tracking-widest">Current Location</label>
                 <input
+                  name="Current Location"
                   className="bg-surface-main border border-outline-variant p-4 focus:border-secondary focus:ring-0 text-on-surface transition-all outline-none"
                   placeholder="Intersection or Address"
                   type="text"
@@ -155,6 +165,7 @@ export default function ContactPage() {
               <div className="flex flex-col space-y-2">
                 <label className="font-label-bold text-label-bold text-on-surface-variant uppercase tracking-widest">Destination (If Towing)</label>
                 <input
+                  name="Destination"
                   className="bg-surface-main border border-outline-variant p-4 focus:border-secondary focus:ring-0 text-on-surface transition-all outline-none"
                   placeholder="Drop-off point"
                   type="text"
@@ -163,6 +174,7 @@ export default function ContactPage() {
               <div className="flex flex-col space-y-2 md:col-span-2">
                 <label className="font-label-bold text-label-bold text-on-surface-variant uppercase tracking-widest">Additional Details</label>
                 <textarea
+                  name="Details"
                   className="bg-surface-main border border-outline-variant p-4 focus:border-secondary focus:ring-0 text-on-surface transition-all outline-none"
                   placeholder="Briefly describe your situation..."
                   rows={4}

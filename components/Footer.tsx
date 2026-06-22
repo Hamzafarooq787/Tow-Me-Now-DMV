@@ -117,13 +117,21 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="pt-8 border-t border-outline-variant flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] sm:text-xs font-bold uppercase tracking-widest text-on-surface-variant text-center md:text-left">
-          <p>© 2025 Tow Me Now DMV. All rights reserved.</p>
-          <div className="flex flex-wrap justify-center gap-4 md:gap-8">
-            <span>Precision Towing</span>
-            <span>Professional Recovery</span>
-            <span>24/7 Reliability</span>
+        <div className="pt-8 border-t border-outline-variant flex flex-col items-center gap-4 text-[10px] sm:text-xs font-bold uppercase tracking-widest text-on-surface-variant text-center">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4 w-full">
+            <p>© 2026 Tow Me Now DMV. All rights reserved.</p>
+            <div className="flex flex-wrap justify-center gap-4 md:gap-8">
+              <span>Precision Towing</span>
+              <span>Professional Recovery</span>
+              <span>24/7 Reliability</span>
+            </div>
           </div>
+          <p className="normal-case tracking-normal font-normal text-xs flex items-center gap-1">
+            Designed with{" "}
+            <span className="material-symbols-outlined text-amber-brand" style={{ fontSize: "14px", fontVariationSettings: "'FILL' 1" }}>favorite</span>
+            {" "}by{" "}
+            <a href="https://linkedo.co.uk/" target="_blank" rel="nofollow noopener" className="text-amber-brand hover:underline">Linkedo</a>
+          </p>
         </div>
       </div>
     </footer>
