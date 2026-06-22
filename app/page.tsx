@@ -41,7 +41,7 @@ export default function Home() {
               className="h-full w-full bg-cover bg-center diagonal-split shadow-2xl"
               style={{
                 backgroundImage:
-                  "url('https://lh3.googleusercontent.com/aida-public/AB6AXuC7kjLkbUxjicpS7SKQzV4SOeMX57YgmqUtpebf-LB2yLhG--hT0q2JthDv4A4Vc0cuCIeRcirsmOfHkAP3iHZ9KkdpTFZhcYwpcujL_9mO1Y2HeP0eNRCytTKpQ37bPoyOD4PtRa9aUHt-cJh7rz7GQePahARw74HzyOwGh9f4pgWeYWP7BcY7IC0A2XDPgEJs1b562wcYOIVitkh4nfXOTkymnY_ocsVaDZouegEvxCkxvHIns02_GWD0iSaogGfopjRVbDC3SCE')",
+                  "url('/images/Hero%20image-airanko.webp')",
               }}
             />
             <div className="absolute bottom-10 right-10 z-20 glass-panel p-6 border-l-4 border-amber-brand">
