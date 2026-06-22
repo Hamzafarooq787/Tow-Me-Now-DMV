@@ -1,16 +1,16 @@
 @import "tailwindcss";
 
 @theme {
-  /* ── Home page colors ── */
+  /* ── Shared colors ── */
   --color-primary: #4cd7f6;
   --color-surface: #0c141f;
   --color-surface-container: #19202b;
   --color-surface-container-low: #151c27;
   --color-surface-container-lowest: #070e19;
   --color-outline-variant: #3d494c;
-  --color-amber-brand: #f59e0b;
-  --color-dark-navy: #0b0f1a;
-  --color-on-background: #dce2f3;
+  --color-amber-brand: #ffb95f;
+  --color-dark-navy: #0c141f;
+  --color-on-background: #d7e5e9;
   --color-on-primary: #003640;
   --color-on-primary-container: #00424f;
 
@@ -64,8 +64,8 @@ body {
 .inter { font-family: 'Inter', sans-serif; }
 
 .amber-glow:hover {
-  box-shadow: 0 0 20px rgba(245, 158, 11, 0.2);
-  border-color: #f59e0b;
+  box-shadow: 0 0 20px rgba(255, 185, 95, 0.2);
+  border-color: #ffb95f;
 }
 
 .diagonal-split {
