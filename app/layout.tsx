@@ -47,6 +47,14 @@ export default function RootLayout({
         <Nav />
         {children}
         <Footer />
+        {/* Floating Call Button */}
+        <a
+          href="tel:2028120075"
+          aria-label="Call Tow Me Now DMV"
+          className="fixed bottom-6 right-6 z-50 bg-amber-brand hover:bg-amber-600 text-black rounded-full w-14 h-14 flex items-center justify-center shadow-[0_0_24px_rgba(255,185,95,0.5)] transition-all hover:scale-110 active:scale-95"
+        >
+          <span className="material-symbols-outlined text-2xl" style={{ fontVariationSettings: "'FILL' 1" }}>phone</span>
+        </a>
       </body>
     </html>
   );

@@ -26,7 +26,7 @@ export default function ServicesPage() {
           <p className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-10">
             Rapid response and elite heavy-duty assistance throughout the DMV area. We specialize in complex recoveries and immediate emergency support when every second counts.
           </p>
-          <div className="flex flex-wrap gap-12 mt-16">
+          <div className="flex flex-wrap gap-6 sm:gap-12 mt-8 sm:mt-16">
             {[
               { stat: "25+", label: "Years Experience" },
               { stat: "3,000+", label: "Vehicles Assisted" },
@@ -46,7 +46,7 @@ export default function ServicesPage() {
 
         {/* Card 1: Accident Management — image right */}
         <section className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center bg-surface-card border-l-4 border-secondary overflow-hidden">
-          <div className="p-10">
+          <div className="p-6 md:p-10">
             <div className="inline-block bg-secondary/10 px-4 py-1 mb-6">
               <span className="font-label-bold text-label-bold text-secondary uppercase tracking-widest">Emergency Priority</span>
             </div>
@@ -93,7 +93,7 @@ export default function ServicesPage() {
             />
             <div className="absolute inset-0 bg-gradient-to-l from-surface-card via-transparent to-transparent" />
           </div>
-          <div className="p-10">
+          <div className="p-6 md:p-10">
             <div className="inline-block bg-primary/10 px-4 py-1 mb-6">
               <span className="font-label-bold text-label-bold text-primary uppercase tracking-widest">Heavy Duty Elite</span>
             </div>
@@ -124,7 +124,7 @@ export default function ServicesPage() {
 
         {/* Card 3: Roadside Assistance — image right */}
         <section className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center bg-surface-card border-l-4 border-secondary overflow-hidden">
-          <div className="p-10">
+          <div className="p-6 md:p-10">
             <div className="inline-block bg-secondary/10 px-4 py-1 mb-6">
               <span className="font-label-bold text-label-bold text-secondary uppercase tracking-widest">Rapid Response</span>
             </div>
@@ -184,7 +184,7 @@ export default function ServicesPage() {
             {["WASHINGTON DC", "MARYLAND", "VIRGINIA"].map((city) => (
               <div
                 key={city}
-                className="glass-panel-cyan px-12 py-6 border border-secondary/20 flex items-center gap-4"
+                className="glass-panel-cyan px-6 sm:px-12 py-4 sm:py-6 border border-secondary/20 flex items-center gap-4"
               >
                 <span className="material-symbols-outlined text-secondary">location_on</span>
                 <span className="font-headline-md text-headline-md tracking-widest">{city}</span>

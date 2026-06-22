@@ -37,11 +37,8 @@ export default function AboutPage() {
             <img
               className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
               src="/images/OUR%20LEGACY%20OF%20RESILIENCE-airanko.webp"
-              alt="Classic 1990s heavy-duty tow truck in an industrial yard"
+              alt="Classic heavy-duty tow truck in an industrial yard"
             />
-            <div className="absolute bottom-0 left-0 bg-secondary text-on-secondary px-8 py-6 font-headline-md text-headline-md">
-              EST. 1999
-            </div>
           </div>
         </div>
         <div>
@@ -141,7 +138,7 @@ export default function AboutPage() {
             </ul>
           </div>
           <div className="flex flex-col justify-center">
-            <div className="glass-card p-12 border-l-8 border-secondary relative">
+            <div className="glass-card p-8 md:p-12 border-l-8 border-secondary relative">
               <span
                 className="material-symbols-outlined text-secondary/20 text-[120px] absolute top-4 right-4 pointer-events-none"
                 style={{ fontVariationSettings: "'FILL' 1" }}
@@ -225,7 +222,7 @@ export default function AboutPage() {
 
       {/* CTA */}
       <section className="max-w-[1280px] mx-auto px-6 md:px-8 pb-16 md:pb-24">
-        <div className="bg-gradient-to-r from-secondary to-secondary-container p-12 relative overflow-hidden flex flex-col md:flex-row justify-between items-center gap-8 shadow-2xl amber-glow">
+        <div className="bg-gradient-to-r from-secondary to-secondary-container p-8 md:p-12 relative overflow-hidden flex flex-col md:flex-row justify-between items-center gap-8 shadow-2xl amber-glow">
           <div
             className="absolute inset-0 opacity-20 pointer-events-none"
             style={{ backgroundImage: "url('https://www.transparenttextures.com/patterns/carbon-fibre.png')" }}
