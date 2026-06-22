@@ -36,7 +36,7 @@ export default function AboutPage() {
           <div className="relative aspect-square bg-surface-card border-l-4 border-secondary overflow-hidden shadow-2xl">
             <img
               className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-64SXHZ6Pw5n8EatS0_C2I0xCyA7GKj1FBK-9-x8K25glnQpBjPdg3R25BlhtB2C_7Q2s6cEn6UQKOB0o44IOlX5eNScSrIsWMndZXwtK1vGTSuevo4sb3_Q0xw23-ERCoKpYhREX-JoZ49kj1yWKPHHHyZcZBFv5gn5XGW1dYXPt4lS1E_U6VmWFZjV8d4zc5pW0XNlO2bSb-SdOSnK3o-4xcQ3zlK2wozf3xHOUrVOpA6srEvWuMQJn4Pjk0xzWj8oqiehvYm0"
+              src="/images/OUR%20LEGACY%20OF%20RESILIENCE-airanko.webp"
               alt="Classic 1990s heavy-duty tow truck in an industrial yard"
             />
             <div className="absolute bottom-0 left-0 bg-secondary text-on-secondary px-8 py-6 font-headline-md text-headline-md">
