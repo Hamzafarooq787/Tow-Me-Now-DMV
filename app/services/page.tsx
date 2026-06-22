@@ -76,7 +76,7 @@ export default function ServicesPage() {
           <div className="h-full min-h-[400px] relative order-first md:order-last">
             <img
               className="w-full h-full object-cover grayscale-[0.3] contrast-125"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuARYzpghnNANY4uf-56vLps_pqJl3J6oYkPEBJQd3xLaSB_KpY0jhutKVzdyy0axCQGBIz29N1voC0Mkxh13eo3kGvKGSp6nGKGa5oXkfV31hR13VR1snXdbP_FksdaAkVEt_ATxGHPKN-c821JkI3dxVO_fImlKLI4JHRmejzHKW81dSEkh1CEdstE5WQIkSoi2WVpdPQ_fmqDT7q-OsDQGBVx0zNKikr_PLPtJul7xej1lWnILVsh89caBR7odHTlghhJedwkhHM"
+              src="/images/Accident%20DMV-airanko.webp"
               alt="Professional tow truck with emergency lights at night"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-surface-card via-transparent to-transparent" />
@@ -88,7 +88,7 @@ export default function ServicesPage() {
           <div className="h-full min-h-[400px] relative">
             <img
               className="w-full h-full object-cover grayscale-[0.3] contrast-125"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBp6DyLV2LK0hornwI9wjt3yvOq7pq4RtmTVQjievAvOTRDBvOUrox05KiuMyVJpDuzV53MWrwEV_mbegQxxmgWngDLWNNYMPAN_w0WCgPNsF_l_SAw_JUgKIYeVwMnKR3NeqBiKcXp1n7hp87CjwLqZt4Y9e9-onlhmyi4SdaqMu22NSYkALB1qxn_v9vwNMDxLCYZ7e6JHOeXN5BSJdB_-31i8raP_igB5L8FR_IzyFQfn36U0ri5DLSJ6HnOzyvtMJ9Xxu2GDlE"
+              src="/images/Towing%20service%20DMV-airanko.webp"
               alt="Heavy-duty winch and cable recovery vehicle"
             />
             <div className="absolute inset-0 bg-gradient-to-l from-surface-card via-transparent to-transparent" />
@@ -154,7 +154,7 @@ export default function ServicesPage() {
           <div className="h-full min-h-[400px] relative order-first md:order-last">
             <img
               className="w-full h-full object-cover grayscale-[0.3] contrast-125"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDeFk68aeDfb4CT9Y_PcHMhIPaUjQlHDQ4LmuI7h2bz5frNI84jW9V8EVYi7qS4o2MoJAK0VfAVi3PNaKkDQjVLAxsjdWEMcI48TWmdPMvhm8h4GAXFLUx1zBYe8LXTnK9MbAuhraZQdmXMvTOLdqZ7yPQRtRssg--qPgawFdDt7sTeLZ0h7cLZesv3zKGNKvXOQ8WYv6ASu2LRNnotGKJhp5JWYtVCPsYoQ6irkoK3KqNY0zG7VwCIi5VOT_H0SsBXTP0nSycouN0"
+              src="/images/Roadside%20Assistance%20DMV-airanko.webp"
               alt="Technician performing roadside assistance on a vehicle"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-surface-card via-transparent to-transparent" />
