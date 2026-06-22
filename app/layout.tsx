@@ -8,6 +8,16 @@ export const metadata: Metadata = {
   title: "Tow Me Now DMV | Reliable Towing 24/7",
   description:
     "Professional car towing services available 24/7, 365 days a year across the DMV area.",
+  icons: {
+    icon: "/images/Site-Icon%20Tow%20Me%20Now.webp",
+    apple: "/images/Site-Icon%20Tow%20Me%20Now.webp",
+  },
+  openGraph: {
+    title: "Tow Me Now DMV | Reliable Towing 24/7",
+    description:
+      "Professional car towing services available 24/7, 365 days a year across the DMV area.",
+    images: [{ url: "/images/Open%20graph%20tow%20me%20now%20dmv-airanko.webp" }],
+  },
 };
 
 export default function RootLayout({

@@ -7,16 +7,12 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 md:gap-12 mb-16">
           {/* Brand */}
           <div className="sm:col-span-2 md:col-span-1">
-            <div className="flex items-center gap-2 mb-6">
-              <span
-                className="material-symbols-outlined text-amber-brand text-3xl"
-                style={{ fontVariationSettings: "'FILL' 1" }}
-              >
-                rowing
-              </span>
-              <span className="bebas text-2xl font-bold tracking-tight text-on-background">
-                TOW ME NOW <span className="text-primary">DMV</span>
-              </span>
+            <div className="mb-6">
+              <img
+                src="/images/Tow%20me%20now%20logo.webp"
+                alt="Tow Me Now DMV"
+                className="h-12 w-auto object-contain"
+              />
             </div>
             <p className="inter text-on-surface-variant text-sm leading-relaxed mb-6">
               Providing reliable, professional towing and roadside assistance

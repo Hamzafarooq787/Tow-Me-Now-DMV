@@ -20,18 +20,14 @@ export default function Nav() {
       <div className="max-w-[1280px] mx-auto px-6 md:px-8 py-4 flex justify-between items-center">
         <Link
           href="/"
-          className="flex items-center gap-2"
+          className="flex items-center"
           onClick={() => setMenuOpen(false)}
         >
-          <span
-            className="material-symbols-outlined text-amber-brand text-3xl"
-            style={{ fontVariationSettings: "'FILL' 1" }}
-          >
-            rowing
-          </span>
-          <span className="bebas text-xl sm:text-2xl md:text-3xl font-bold tracking-tight text-on-background">
-            TOW ME NOW <span className="text-primary">DMV</span>
-          </span>
+          <img
+            src="/images/Tow%20me%20now%20logo.webp"
+            alt="Tow Me Now DMV"
+            className="h-10 md:h-12 w-auto object-contain"
+          />
         </Link>
 
         {/* Desktop links */}
