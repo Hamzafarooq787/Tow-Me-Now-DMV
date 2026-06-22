@@ -166,7 +166,7 @@ export default function Home() {
               className="aspect-square bg-cover bg-center border border-outline-variant"
               style={{
                 backgroundImage:
-                  "url('https://lh3.googleusercontent.com/aida-public/AB6AXuBFzpwzZDhpddk1gf2lrN-_YgHcndzZKWxBkXYsJ2tFdo47XEqKVrVTktATCq-zhpexm4d0whnEfaSJQ15jNHCGKTYRSCXdbm5iKsr7kgc7MLYGJDu865kMeVcY1-LcVpKKCLV2r23bquW5iaKjyyYMiAAZM4evM-O39LXGY4Llj-4hI32fBsEEy-br3qUYFEsmOgkw5bPRzjgh-b1vZyNZ85Ww7VSbBvCiSb-Y-EkMJhp4nqEOBLbdGY3u1mUy5sNLAUAiL-3hYDM')",
+                  "url('/images/why%20choose%20us-airanko.webp')",
               }}
             />
             <div className="absolute -bottom-8 -right-8 bg-amber-brand p-8 hidden md:block">
