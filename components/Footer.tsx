@@ -11,7 +11,7 @@ export default function Footer() {
               <img
                 src="/images/Tow%20me%20now%20logo.webp"
                 alt="Tow Me Now DMV"
-                className="h-12 w-auto object-contain"
+                className="h-16 w-auto object-contain"
               />
             </div>
             <p className="inter text-on-surface-variant text-sm leading-relaxed mb-6">

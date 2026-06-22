@@ -110,43 +110,49 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-[#131929] p-10 border-l-4 border-amber-500 neon-border group transition-all duration-500">
-              <span className="material-symbols-outlined text-amber-brand text-5xl mb-8 group-hover:-translate-y-2 transition-transform block">
-                car_crash
-              </span>
-              <h3 className="bebas text-3xl text-on-background mb-4">
-                Accident Management
-              </h3>
-              <p className="inter text-on-surface-variant leading-relaxed">
-                Swift and careful vehicle removal from accident scenes. We
-                handle the logistics so you can focus on what matters.
-              </p>
+            <div className="bg-[#131929] border-l-4 border-amber-500 neon-border group transition-all duration-500 overflow-hidden">
+              <div className="h-52 overflow-hidden">
+                <img src="/images/Accident%20DMV-airanko.webp" alt="Accident Management" className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" />
+              </div>
+              <div className="p-10">
+                <h3 className="bebas text-3xl text-on-background mb-4">
+                  Accident Management
+                </h3>
+                <p className="inter text-on-surface-variant leading-relaxed">
+                  Swift and careful vehicle removal from accident scenes. We
+                  handle the logistics so you can focus on what matters.
+                </p>
+              </div>
             </div>
 
-            <div className="bg-[#131929] p-10 border-l-4 border-amber-500 neon-border group transition-all duration-500">
-              <span className="material-symbols-outlined text-amber-brand text-5xl mb-8 group-hover:-translate-y-2 transition-transform block">
-                rowing
-              </span>
-              <h3 className="bebas text-3xl text-on-background mb-4">
-                Recovery Towing
-              </h3>
-              <p className="inter text-on-surface-variant leading-relaxed">
-                Specialized equipment for vehicles in ditches, mud, or complex
-                recovery scenarios. Precision and power combined.
-              </p>
+            <div className="bg-[#131929] border-l-4 border-amber-500 neon-border group transition-all duration-500 overflow-hidden">
+              <div className="h-52 overflow-hidden">
+                <img src="/images/Towing%20service%20DMV-airanko.webp" alt="Recovery Towing" className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" />
+              </div>
+              <div className="p-10">
+                <h3 className="bebas text-3xl text-on-background mb-4">
+                  Recovery Towing
+                </h3>
+                <p className="inter text-on-surface-variant leading-relaxed">
+                  Specialized equipment for vehicles in ditches, mud, or complex
+                  recovery scenarios. Precision and power combined.
+                </p>
+              </div>
             </div>
 
-            <div className="bg-[#131929] p-10 border-l-4 border-amber-500 neon-border group transition-all duration-500">
-              <span className="material-symbols-outlined text-amber-brand text-5xl mb-8 group-hover:-translate-y-2 transition-transform block">
-                minor_crash
-              </span>
-              <h3 className="bebas text-3xl text-on-background mb-4">
-                Roadside Assistance
-              </h3>
-              <p className="inter text-on-surface-variant leading-relaxed">
-                Lockouts, jump-starts, tire changes, and fuel delivery. Small
-                problems shouldn&apos;t ruin your entire day.
-              </p>
+            <div className="bg-[#131929] border-l-4 border-amber-500 neon-border group transition-all duration-500 overflow-hidden">
+              <div className="h-52 overflow-hidden">
+                <img src="/images/Roadside%20Assistance%20DMV-airanko.webp" alt="Roadside Assistance" className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" />
+              </div>
+              <div className="p-10">
+                <h3 className="bebas text-3xl text-on-background mb-4">
+                  Roadside Assistance
+                </h3>
+                <p className="inter text-on-surface-variant leading-relaxed">
+                  Lockouts, jump-starts, tire changes, and fuel delivery. Small
+                  problems shouldn&apos;t ruin your entire day.
+                </p>
+              </div>
             </div>
           </div>
         </div>

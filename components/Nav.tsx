@@ -26,7 +26,7 @@ export default function Nav() {
           <img
             src="/images/Tow%20me%20now%20logo.webp"
             alt="Tow Me Now DMV"
-            className="h-10 md:h-12 w-auto object-contain"
+            className="h-14 md:h-16 w-auto object-contain"
           />
         </Link>
 
